@@ -7,7 +7,7 @@ class Stack:
         
         self.items.append(x)
     
-    def pop(self) -> int | str:
+    def pop(self) -> int:
         if self.is_empty():
             raise  IndexError("empty stack")
         removed = self.items.pop()
@@ -18,7 +18,7 @@ class Stack:
         
         return len(self.items) == 0
     
-    def peek(self) -> int | str:
+    def peek(self) -> int:
         if self.is_empty():
             raise  IndexError("empty stack")
         return self.items[-1]
