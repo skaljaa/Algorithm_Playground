@@ -14,7 +14,7 @@ class SinglyLinkedList:
         self.head = node
     
     def insert_end(self,x):
-        if self.head == None:
+        if self.head is None:
             node = Node(x)
             self.head = node
         else:
