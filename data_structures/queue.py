@@ -15,8 +15,8 @@ class Queue:
             x = self.items.pop(0)
             print(f"{x} dequeued")
             return x
-        else:
-            raise IndexError("Empty queue")
+        raise IndexError("Empty queue")
+    
     def peek(self) -> int:
         if not self.is_empty():
             return self.items[0]
