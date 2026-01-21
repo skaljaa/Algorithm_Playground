@@ -33,7 +33,7 @@ class CircularQueue:
         
         return item
     def peek(self):
-        if self.isempty():
+        if self.is_empty():
             raise IndexError("empty queue")
         return self.queue[self.front]
     
